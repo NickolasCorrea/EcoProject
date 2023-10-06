@@ -5,7 +5,16 @@ TagManager:
   serializedVersion: 2
   tags:
   - Trash
-  - RecyclableTrashCan
+  - Plastico
+  - Papel
+  - Vidro
+  - Organico
+  - Metal
+  - LixeiraPlastico
+  - LixeiraPapel
+  - LixeiraVidro
+  - LixeiraOrganico
+  - LixeiraMetal
   layers:
   - Default
   - TransparentFX

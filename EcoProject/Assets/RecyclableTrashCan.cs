@@ -4,12 +4,42 @@ using UnityEngine;
 
 public class RecyclableTrashCan : MonoBehaviour
 {
+
     [SerializeField] float packageDisappears = 0.2f;
 
-    public void OnTriggerEnter2D(Collider2D other) {
-        Debug.Log("Lixo reciclado!");
-        if (other.tag == "Trash"){
+    void OnTriggerEnter2D(Collider2D other) {
+
+        string objectTag = this.gameObject.tag;
+
+        if (objectTag=="LixeiraPlastico" && other.tag == "Plastico"){
             Destroy(other.gameObject, packageDisappears);
+            Debug.Log("Lixo reciclado!");
         }
+        else if(objectTag=="LixeiraPapel" && other.tag == "Papel")
+        {
+            Destroy(other.gameObject, packageDisappears);
+            Debug.Log("Lixo reciclado!");
+        }
+        else if(objectTag=="LixeiraVidro" && other.tag == "Vidro")
+        {
+            Destroy(other.gameObject, packageDisappears);
+            Debug.Log("Lixo reciclado!");
+        }
+        else if(objectTag=="LixeiraOrganico" && other.tag == "Organico")
+        {
+            Destroy(other.gameObject, packageDisappears);
+            Debug.Log("Lixo reciclado!");
+        }
+        else if(objectTag=="LixeiraMetal" && other.tag == "Metal")
+        {
+            Destroy(other.gameObject, packageDisappears);
+            Debug.Log("Lixo reciclado!");
+        }
+        else
+        {
+            Debug.Log("LIXO INVÁLIDO!");
+        }
+
+
     }
 }

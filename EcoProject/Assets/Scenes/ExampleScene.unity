@@ -137,7 +137,7 @@ GameObject:
   - component: {fileID: 148401553}
   m_Layer: 3
   m_Name: GarrafaPlastico
-  m_TagString: Trash
+  m_TagString: Plastico
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -217,7 +217,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 11
   m_Sprite: {fileID: -9095717837082945937, guid: 207ee8102dd4143d288186ef0be518ee, type: 3}
   m_Color: {r: 0.9528302, g: 0.8286902, b: 0.05842829, a: 1}
   m_FlipX: 0
@@ -512,7 +512,7 @@ GameObject:
   - component: {fileID: 561268342}
   m_Layer: 3
   m_Name: MacaOrganico
-  m_TagString: Untagged
+  m_TagString: Organico
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -791,15 +791,15 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 648826897}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.36353338, y: -0.7332116, z: 0.11268962}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 3.7181349, y: -0.04386002, z: 0.07910061}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1480492373}
   - {fileID: 2121190545}
   - {fileID: 437726916}
-  m_Father: {fileID: 0}
+  m_Father: {fileID: 822830284}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &676791342
 GameObject:
@@ -949,7 +949,7 @@ GameObject:
   - component: {fileID: 786503189}
   m_Layer: 3
   m_Name: Papel
-  m_TagString: Trash
+  m_TagString: Papel
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1162,7 +1162,7 @@ Canvas:
   m_Enabled: 1
   serializedVersion: 3
   m_RenderMode: 0
-  m_Camera: {fileID: 0}
+  m_Camera: {fileID: 519420031}
   m_PlaneDistance: 100
   m_PixelPerfect: 0
   m_ReceivesEvents: 1
@@ -1355,6 +1355,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 915868652}
+  - {fileID: 648826898}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &832619798
@@ -1371,7 +1372,7 @@ GameObject:
   - component: {fileID: 832619800}
   m_Layer: 0
   m_Name: RecyclableTrashArea
-  m_TagString: RecyclableTrashCan
+  m_TagString: LixeiraOrganico
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1686,7 +1687,7 @@ GameObject:
   - component: {fileID: 1507710691}
   m_Layer: 0
   m_Name: RecyclableTrashArea
-  m_TagString: RecyclableTrashCan
+  m_TagString: LixeiraMetal
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1960,7 +1961,7 @@ GameObject:
   - component: {fileID: 1579781955}
   m_Layer: 3
   m_Name: LataMetal
-  m_TagString: Trash
+  m_TagString: Metal
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2248,7 +2249,7 @@ GameObject:
   - component: {fileID: 1884898263}
   m_Layer: 3
   m_Name: Vidro
-  m_TagString: Untagged
+  m_TagString: Vidro
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2760,7 +2761,7 @@ GameObject:
   - component: {fileID: 2122753270}
   m_Layer: 0
   m_Name: RecyclableTrashArea
-  m_TagString: RecyclableTrashCan
+  m_TagString: LixeiraPlastico
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2968,4 +2969,3 @@ SceneRoots:
   - {fileID: 806237107}
   - {fileID: 1970125760}
   - {fileID: 822830284}
-  - {fileID: 648826898}
