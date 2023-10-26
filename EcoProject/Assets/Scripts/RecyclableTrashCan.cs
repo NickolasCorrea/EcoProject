@@ -37,6 +37,7 @@ public class RecyclableTrashCan : MonoBehaviour
         }
         else
         {
+            Destroy(other.gameObject, packageDisappears);
             Debug.Log("LIXO INVÁLIDO!");
         }
 

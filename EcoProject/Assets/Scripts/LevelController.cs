@@ -6,36 +6,35 @@ using UnityEngine.SceneManagement;
 public class LevelController : MonoBehaviour
 {
     [SerializeField] GameObject menu;
+    public int difficulty;
 
     public void Pause()
     {
+        menu.SetActive(true);
         Time.timeScale = 0f;
     }
 
     public void Resume()
     {
+        menu.SetActive(false);
         Time.timeScale = 1f;
     }
 
-    public void MenuOpen()
-    {
-        menu.SetActive(true);
-    }
-
-    public void MenuClose()
-    {
-        menu.SetActive(true);
-    }
-
-    public void Retry()
-    {
-        Time.timeScale = 1f;
-        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
-    }
-
-    public void SceneSelector(int sceneID)
+    public void Retry(int sceneID)
     {
         Time.timeScale = 1f;
         SceneManager.LoadScene(sceneID);
     }
+
+    public void Home(int sceneID)
+    {
+        Time.timeScale = 1f;
+        SceneManager.LoadScene(sceneID);
+    }
+
+    public void SetDifficulty(int newDifficulty)
+    {
+        difficulty = newDifficulty;
+    }
+
 }
